@@ -1,4 +1,7 @@
 {
   "module": true,
-  "type": "ts"
+  "type": "ts",
+  "plugins": [
+    "p2p"
+  ]
 }
