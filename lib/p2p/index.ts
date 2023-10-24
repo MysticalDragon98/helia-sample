@@ -1,4 +1,5 @@
 import createP2PNode from "./createP2PNode.js";
+import { MemoryDatastore } from "datastore-core";
 import { $DHT_MODE, $P2P_HOSTS, $P2P_KNOWN_PEERS, $P2P_PORT, $P2P_PRIVKEY, $P2P_PUBKEY } from "../env.js";
 import { customLog, sequencialColor } from "termx";
 import peerIdFromPrivKey from "./peerIdFromPrivKey.js";

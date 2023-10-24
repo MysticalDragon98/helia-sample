@@ -47,6 +47,8 @@ export default async function createP2PNode (options: IOptions) {
         },
         peerId: options.peerId ?? null
     });
+
+    (<any>libp2p).datastore = datastore;
     
     return libp2p;
 }
