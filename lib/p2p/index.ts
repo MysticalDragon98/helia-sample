@@ -26,5 +26,5 @@ export async function initP2P () {
         log("Private Key:", "0x" + Buffer.from($libp2p.peerId.privateKey!).toString('hex'));
     }
 
-    log(`P2P node started!`);
+    log(`P2P node listening at:`, $libp2p.getMultiaddrs());
 }
